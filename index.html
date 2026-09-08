@@ -11,6 +11,7 @@
 
 <body>
     <main class="container">
+
         <h1 id="mainHeading">Event-Driven Webpage</h1>
 
         <label for="nameInput">Enter your name:</label>
@@ -24,14 +25,23 @@
         <p id="typingMessage">You are typing:</p>
 
         <div class="button-group">
-            <button id="greetButton">Display Greeting</button>
-            <button id="colorButton">Change Background</button>
-            <button id="resetButton">Reset</button>
+            <button id="greetButton" type="button">
+                Display Greeting
+            </button>
+
+            <button id="colorButton" type="button">
+                Change Background
+            </button>
+
+            <button id="resetButton" type="button">
+                Reset
+            </button>
         </div>
 
         <p id="resultMessage">
             Enter your name and select an action.
         </p>
+
     </main>
 
     <script src="script.js"></script>
