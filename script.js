@@ -13,13 +13,15 @@ function displayGreeting() {
     if (userName === "") {
         resultMessage.textContent = "Please enter your name.";
         console.log("Greeting failed: name is empty.");
-    } else {
-        heading.textContent = "Hello, " + userName;
-        resultMessage.textContent =
-            "The greeting was displayed successfully.";
-
-        console.log("Greeting displayed for: " + userName);
+        return;
     }
+
+    heading.textContent = "Hello, " + userName;
+
+    resultMessage.textContent =
+        "The greeting was displayed successfully.";
+
+    console.log("Greeting displayed for: " + userName);
 }
 
 function showTypedText() {
@@ -37,8 +39,11 @@ function changeBackground() {
 
 function resetPage() {
     heading.textContent = "Event-Driven Webpage";
+
     nameInput.value = "";
+
     typingMessage.textContent = "You are typing:";
+
     resultMessage.textContent =
         "Enter your name and select an action.";
 
@@ -48,8 +53,11 @@ function resetPage() {
 }
 
 greetButton.addEventListener("click", displayGreeting);
+
 colorButton.addEventListener("click", changeBackground);
+
 resetButton.addEventListener("click", resetPage);
+
 nameInput.addEventListener("input", showTypedText);
 
 console.log("JavaScript file loaded successfully.");
