@@ -5,9 +5,11 @@
 body {
     margin: 0;
     min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     background-color: #f3f4f6;
     font-family: Arial, sans-serif;
 }
@@ -15,16 +17,23 @@ body {
 .container {
     width: 90%;
     max-width: 600px;
+
     padding: 30px;
+
     text-align: center;
+
     background-color: white;
+
     border-radius: 10px;
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 input {
     width: 100%;
+
     padding: 10px;
+
     margin-top: 8px;
 }
 
@@ -34,11 +43,14 @@ input {
 
 button {
     padding: 10px 15px;
+
     margin: 5px;
+
     cursor: pointer;
 }
 
 #resultMessage {
     padding: 12px;
+
     background-color: #f3f4f6;
 }
